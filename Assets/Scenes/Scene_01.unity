@@ -5337,7 +5337,7 @@ PrefabInstance:
     - target: {fileID: 622763330879593280, guid: 80dc5fed223346e4fa53a8715357b330,
         type: 3}
       propertyPath: ShotsToComplete
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4303680812698288562, guid: 80dc5fed223346e4fa53a8715357b330,
         type: 3}
@@ -6513,7 +6513,7 @@ PrefabInstance:
     - target: {fileID: 4747699013875765580, guid: 895394c30a26e9d4d9c1f0cc78fab9a2,
         type: 3}
       propertyPath: rotateBy.z
-      value: 0.15
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4988693941867826992, guid: 895394c30a26e9d4d9c1f0cc78fab9a2,
         type: 3}

@@ -8,8 +8,7 @@ public class GameManager : MonoBehaviour
 {
     // with the refactor GameManager Doesn't really manager anything anymore...
     // it does hold the ShotsLeft varialble but thats it..
-
-
+            
     [Header("Gameplay Info")]
     public int shotsLeft = 0;
 

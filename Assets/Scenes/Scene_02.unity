@@ -5287,6 +5287,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoalTrigger
       objectReference: {fileID: 0}
+    - target: {fileID: 6495566707559216238, guid: 60137b205b5505c4183055c672ccb59c,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495566707559216238, guid: 60137b205b5505c4183055c672ccb59c,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.75
+      objectReference: {fileID: 0}
     - target: {fileID: 6495566707559216239, guid: 60137b205b5505c4183055c672ccb59c,
         type: 3}
       propertyPath: m_Enabled

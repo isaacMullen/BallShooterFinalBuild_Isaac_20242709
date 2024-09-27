@@ -6,17 +6,17 @@ using UnityEngine;
 // This work is licensed under CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 public class BallManager : MonoBehaviour
-{
+{                
     [Header("References")]
     public GameObject ball;  // Ball Mesh?
     public Rigidbody rb_ball;
-    public GameObject aimGuide;
+    public GameObject aimGuide;    
 
     [Header("Script References")]
     public UIManager _uIManager;
     public GameManager _gameManager;
     public GameStateManager _gameStateManager;
-    public CameraManager _cameraManager;
+    public CameraManager _cameraManager;   
 
 
     public bool ballStopped;
@@ -32,7 +32,7 @@ public class BallManager : MonoBehaviour
         if (_uIManager == null) { Debug.LogError("UIManager is not assigned to BallManager in the Inspector!"); }
         if (_gameManager == null) { Debug.LogError("GameManager is not assigned to BallManager in the Inspector!"); }
         if (_gameStateManager == null) { Debug.LogError("GameStateManager is not assigned to BallManager in the Inspector!"); }
-        if (_cameraManager == null) { Debug.LogError("CameraManager is not assigned to BallManager in the Inspector!"); }
+        if (_cameraManager == null) { Debug.LogError("CameraManager is not assigned to BallManager in the Inspector!"); }        
     }
 
 
@@ -90,7 +90,13 @@ public class BallManager : MonoBehaviour
         {
             SetBallToStartPosition();
         }
+        else if(other.gameObject.tag == "Enemy")
+        {
+            Debug.Log("DETECTED");
+            SetBallToStartPosition();                     
+        }
     }
+
 
     public void HandleAimGuide()
     {
